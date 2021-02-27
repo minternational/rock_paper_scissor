@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rock_paper_scissor.css" />
+  </head>
+  <body>
+    <div id="content" class="w-screen inline-block text-center pt-6">
+      <div class="text-5xl pb-6">
+        <h2 id="header">Rock Paper Scissor</h2>
+      </div>
+      <button
+        class="hover:bg-blue-700 text-blue-700 font-bold text-4xl py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 hover:text-white rounded"
+        id="rockButton"
+      >
+        ✊
+      </button>
+      <button
+        class="hover:bg-blue-700 text-blue-700 font-bold text-4xl py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 hover:text-white rounded"
+        id="paperButton"
+      >
+        ✋
+      </button>
+      <button
+        class="hover:bg-blue-700 text-blue-700 font-bold text-4xl py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 hover:text-white rounded"
+        id="scissorButton"
+      >
+        ✌️
+      </button>
+      <div
+        id="userName"
+        class="p-4 text-4xl pt-12 text-center"
+        style="visibility: hidden;"
+      >
+        You:
+        <div class="rounded-lg" id="userChoose"></div>
+      </div>
+      <div
+        id="computerName"
+        class="p-4 text-4xl text-center"
+        style="visibility: hidden;"
+      >
+        Computer:
+        <div class="rounded-lg" id="computerChoose"></div>
+      </div>
+    </div>
+    <script src="rock_paper_scissor.js"></script>
+  </body>
+</html>
